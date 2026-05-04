@@ -2,6 +2,14 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
+import {
+  absoluteUrl,
+  getSiteUrl,
+  metadataTitleTemplate,
+  siteDescription,
+  siteName,
+  siteTitleDefault,
+} from "@/lib/seo";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,12 +23,28 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(getSiteUrl()),
+  applicationName: siteName,
   title: {
-    default: "Dropp — Guides & Featured Websites",
-    template: "%s | Dropp",
+    default: siteTitleDefault,
+    template: metadataTitleTemplate,
   },
-  description:
-    "Discover practical guides and trusted website profiles. Built for readers who want clarity and useful referrals—not sales pressure.",
+  description: siteDescription,
+  alternates: {
+    canonical: absoluteUrl("/"),
+  },
+  openGraph: {
+    type: "website",
+    siteName,
+    title: siteTitleDefault,
+    description: siteDescription,
+    url: absoluteUrl("/"),
+  },
+  twitter: {
+    card: "summary",
+    title: siteTitleDefault,
+    description: siteDescription,
+  },
 };
 
 export default function RootLayout({
@@ -30,9 +54,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-slate-50 font-sans text-slate-900">
+      <body className="dropp-body min-h-full overflow-x-clip flex flex-col font-sans text-slate-900">
         <SiteHeader />
-        <main className="flex-1">{children}</main>
+        <main className="dropp-main flex-1">{children}</main>
         <SiteFooter />
       </body>
     </html>

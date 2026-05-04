@@ -1,19 +1,48 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f8fafc;
-  --foreground: #0f172a;
+  --dropp-ink: #0f172a;
+  --dropp-warm-base: #e6e2dc;
+  --dropp-cream: #f7f4ef;
+  --dropp-parchment: #f0ebe3;
+  --dropp-navy: #152032;
+  --dropp-navy-soft: #1c2a3d;
+  --dropp-teal: #0f766e;
+  --dropp-indigo: #4338ca;
+  --dropp-amber: #d97706;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: var(--dropp-warm-base);
+  --color-foreground: var(--dropp-ink);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
+/* Editorial base: warm neutral + layered depth + very subtle grain */
+.dropp-body {
+  color: var(--dropp-ink);
   font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  background-color: var(--dropp-warm-base);
+  background-image:
+    radial-gradient(ellipse 130% 75% at 50% -30%, rgba(15, 118, 110, 0.09), transparent 52%),
+    radial-gradient(ellipse 70% 50% at 100% 10%, rgba(67, 56, 202, 0.06), transparent 48%),
+    radial-gradient(ellipse 55% 45% at 0% 55%, rgba(217, 119, 6, 0.05), transparent 50%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.34) 0%, transparent 38%, transparent 100%);
+  background-attachment: fixed;
+}
+
+.dropp-body::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='280' viewBox='0 0 280 280'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='280' height='280' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+}
+
+.dropp-main {
+  position: relative;
+  z-index: 1;
 }
