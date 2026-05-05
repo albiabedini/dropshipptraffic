@@ -9,7 +9,7 @@ export const siteTitleDefault = `${siteName} | Get More Traffic to Your Dropship
 /** Next.js metadata title template for interior pages (`Page Title | DropshippTraffic`). */
 export const metadataTitleTemplate = `%s | ${siteName}`;
 
-const fallbackSiteUrl = "https://dropshipptrafic.com";
+const fallbackSiteUrl = "https://dropshipptraffic.com";
 
 export function getSiteUrl(): string {
   const rawUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();
