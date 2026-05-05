@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { siteName } from "@/lib/seo";
 import { Container } from "./Container";
 
 const nav = [
@@ -30,12 +31,12 @@ export function SiteHeader() {
           className="group flex min-h-11 items-center gap-2.5 rounded-lg pr-2"
         >
           <span
-            className="relative flex h-9 w-9 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-teal-700 via-teal-600 to-indigo-700 shadow-[0_6px_18px_-8px_rgba(15,118,110,0.65)]"
+            className="relative flex h-9 w-10 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-teal-700 via-teal-600 to-indigo-700 px-0.5 shadow-[0_6px_18px_-8px_rgba(15,118,110,0.65)]"
             aria-hidden
           >
-            <span className="text-[0.55rem] font-bold tracking-tighter text-white/95">DT</span>
+            <span className="text-[0.5rem] font-bold tracking-tighter text-white/95">DST</span>
           </span>
-          <span className="text-[1.07rem] font-semibold tracking-tight text-slate-900">DropTraffic</span>
+          <span className="text-[1.07rem] font-semibold tracking-tight text-slate-900">{siteName}</span>
         </Link>
 
         <nav

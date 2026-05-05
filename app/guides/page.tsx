@@ -58,16 +58,16 @@ const startHerePaths = [
 export const metadata: Metadata = {
   title: "Guides for Online Research and Discovery",
   description:
-    "Beginner-friendly DropTraffic guides about online research, website comparison, browsing mistakes, trust signals, useful links, and safer discovery habits—with dropshipping visibility context.",
+    "Beginner-friendly DropshippTraffic guides about online research, website comparison, browsing mistakes, trust signals, useful links, and safer discovery habits—with dropshipping visibility context.",
   alternates: {
     canonical: absoluteUrl("/guides"),
   },
   openGraph: {
     type: "website",
     siteName,
-    title: "DropTraffic Guides for Online Research and Discovery",
+    title: "DropshippTraffic Guides for Online Research and Discovery",
     description:
-      "Beginner-friendly DropTraffic guides about online research, website comparison, browsing mistakes, trust signals, useful links, and safer discovery habits—with dropshipping visibility context.",
+      "Beginner-friendly DropshippTraffic guides about online research, website comparison, browsing mistakes, trust signals, useful links, and safer discovery habits—with dropshipping visibility context.",
     url: absoluteUrl("/guides"),
   },
 };
@@ -111,7 +111,7 @@ export default function GuidesPage() {
                 Guides for safer, clearer online research
               </h2>
               <p className="mt-5 text-sm leading-relaxed text-slate-600 sm:text-[0.9375rem]">
-                DropTraffic guides are written for people who want practical help understanding websites,
+                DropshippTraffic guides are written for people who want practical help understanding websites,
                 not dense technical manuals. The topics cover how to check if a website is safe, how
                 to know if a website is trustworthy, how to avoid misleading pages, and how to keep
                 useful online research organized.
@@ -144,7 +144,7 @@ export default function GuidesPage() {
             ))}
           </div>
           <div className="mt-8 rounded-xl border border-slate-900/10 bg-[#152032] p-6 text-[#faf8f5]">
-            <h2 className="text-base font-semibold text-white">A simple way to read DropTraffic guides</h2>
+            <h2 className="text-base font-semibold text-white">A simple way to read DropshippTraffic guides</h2>
             <p className="mt-4 text-sm leading-relaxed text-slate-300">
               These guides are most useful when you read them with a real question in mind. If you are
               checking whether a website is safe, focus on trust signals, contact details, policy clarity,

@@ -7,7 +7,7 @@ import { absoluteUrl, siteName } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "For Businesses",
   description:
-    "Plain-language explanation of how DropTraffic publishes informational website profiles and discovery guides for dropshipping-related visibility—without selling traffic or promising rankings, visitors, or conversions.",
+    "Plain-language explanation of how DropshippTraffic publishes informational website profiles and discovery guides for dropshipping-related visibility—without selling traffic or promising rankings, visitors, or conversions.",
   alternates: {
     canonical: absoluteUrl("/for-businesses"),
   },
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     siteName,
     title: `For Businesses | ${siteName}`,
     description:
-      "How DropTraffic publishes informational website profiles and discovery guides for dropshipping-related reader education and contextual visibility—not ecommerce or agency services.",
+      "How DropshippTraffic publishes informational website profiles and discovery guides for dropshipping-related reader education and contextual visibility—not ecommerce or agency services.",
     url: absoluteUrl("/for-businesses"),
   },
 };
@@ -24,15 +24,15 @@ export const metadata: Metadata = {
 const clarityPoints = [
   {
     title: "Written for readers first",
-    body: "Guides answer everyday questions with clear sections; profiles summarize what your site explains or provides without turning DropTraffic into promotional copy.",
+    body: "Guides answer everyday questions with clear sections; profiles summarize what your site explains or provides without turning DropshippTraffic into promotional copy.",
   },
   {
     title: "Outbound when context helps",
-    body: "Readers can follow links to your domain for full source material. DropTraffic stays informational and keeps each page educational.",
+    body: "Readers can follow links to your domain for full source material. DropshippTraffic stays informational and keeps each page educational.",
   },
   {
     title: "Straightforward structure",
-    body: "Pages use predictable headings so someone evaluating DropTraffic quickly understands what exists and why.",
+    body: "Pages use predictable headings so someone evaluating DropshippTraffic quickly understands what exists and why.",
   },
 ];
 
@@ -44,7 +44,7 @@ const businessInputs = [
   "Clear boundaries around claims that should not be overstated.",
 ] as const;
 
-const dropTrafficDoesNotDo = [
+const siteDoesNotDo = [
   "No guaranteed rankings, traffic volume, visitors, leads, conversions, sales, or specific reader actions.",
   "No account system, dashboard, fulfillment workflow, or replacement for the business website.",
   "No aggressive promotional pages disguised as informational guides.",
@@ -76,7 +76,7 @@ export default function ForBusinessesPage() {
           eyebrowTone="teal"
           headingLevel="h1"
           title="If you were contacted—or directed here from elsewhere"
-          description="Most organizations reach this page after an introduction outside DropTraffic. DropTraffic publishes discovery guides and neutral website profiles for dropshipping-related informational visibility—readers find context here, then choose whether to keep researching on featured destinations. DropTraffic does not sell traffic and does not guarantee rankings, impressions, audience volume, or any specific reader action."
+          description="Most organizations reach this page after an introduction outside DropshippTraffic. DropshippTraffic publishes discovery guides and neutral website profiles for dropshipping-related informational visibility—readers find context here, then choose whether to keep researching on featured destinations. DropshippTraffic does not sell traffic and does not guarantee rankings, impressions, audience volume, or any specific reader action."
         />
 
         <div className="relative mt-12 overflow-hidden rounded-2xl border border-slate-900/10 bg-[#152032] p-8 text-[#faf8f5] shadow-[0_28px_72px_-44px_rgba(21,32,50,0.65)] sm:p-10 lg:p-11">
@@ -89,7 +89,7 @@ export default function ForBusinessesPage() {
               Typical editorial footprint
             </p>
             <h2 className="text-xl font-semibold tracking-tight text-white sm:text-2xl">
-              Three to five DropTraffic URLs per featured destination
+              Three to five DropshippTraffic URLs per featured destination
             </h2>
             <p className="text-sm leading-relaxed text-slate-300 sm:text-[0.9375rem]">
               Collaborations usually publish{" "}
@@ -126,7 +126,7 @@ export default function ForBusinessesPage() {
               What businesses should provide
             </h2>
             <p className="mt-5 text-sm leading-relaxed text-slate-600">
-              DropTraffic works best when the source material is specific, readable, and useful to a
+              DropshippTraffic works best when the source material is specific, readable, and useful to a
               general reader. The strongest fit is not a hard pitch; it is a website with enough
               public information to support neutral summaries and practical guide topics.
             </p>
@@ -142,16 +142,16 @@ export default function ForBusinessesPage() {
 
           <section className="rounded-2xl border border-indigo-950/12 bg-gradient-to-br from-[#ecebff] via-[#faf8f5] to-amber-50/50 p-8 shadow-[0_22px_56px_-40px_rgba(67,56,202,0.35)] ring-1 ring-white/80 sm:p-10">
             <h2 className="text-xl font-semibold tracking-tight text-slate-900">
-              What DropTraffic does not promise
+              What DropshippTraffic does not promise
             </h2>
             <p className="mt-5 text-sm leading-relaxed text-slate-600">
               This page is mainly for organizations directed here from outreach or another platform.
-              It explains the editorial format before any conversation goes further. DropTraffic can publish
+              It explains the editorial format before any conversation goes further. DropshippTraffic can publish
               public informational pages and optional outbound links for readers who want primary sources, but it cannot promise how readers,
               search engines, or external platforms will respond.
             </p>
             <ul className="mt-7 space-y-4 text-sm leading-relaxed text-slate-600">
-              {dropTrafficDoesNotDo.map((item) => (
+              {siteDoesNotDo.map((item) => (
                 <li key={item} className="flex gap-3">
                   <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-700" />
                   <span>{item}</span>
@@ -194,7 +194,7 @@ export default function ForBusinessesPage() {
                   4
                 </span>
                 <span>
-                  <span className="font-semibold text-slate-900">Visibility and online presence</span> — Public DropTraffic URLs someone can open while evaluating your organization alongside everything else they already trust or question.
+                  <span className="font-semibold text-slate-900">Visibility and online presence</span> — Public DropshippTraffic URLs someone can open while evaluating your organization alongside everything else they already trust or question.
                 </span>
               </li>
             </ul>
@@ -210,7 +210,7 @@ export default function ForBusinessesPage() {
                 mistakes readers should avoid while researching.
               </p>
               <p className="mt-4 text-sm leading-relaxed text-slate-600">
-                If the only available angle is a promotional claim, it is probably not a strong DropTraffic fit.
+                If the only available angle is a promotional claim, it is probably not a strong DropshippTraffic fit.
                 If the angle can become a helpful checklist, explainer, mistake guide, or trust-signal
                 overview, it has a much better chance of feeling natural here.
               </p>
@@ -234,14 +234,14 @@ export default function ForBusinessesPage() {
                 Teams that already publish useful information on their own sites and want readable reference pages here—not aggressive promotions staged as editorial content.
               </p>
               <p className="relative mt-4 text-sm leading-relaxed text-slate-600">
-                Persuasive selling stays where you control it; DropTraffic focuses on concise explanations readers can skim quickly when vetting a destination.
+                Persuasive selling stays where you control it; DropshippTraffic focuses on concise explanations readers can skim quickly when vetting a destination.
               </p>
             </div>
 
             <div className="rounded-2xl border border-slate-900/10 bg-[#152032] p-8 text-[#faf8f5] shadow-[0_22px_56px_-38px_rgba(21,32,50,0.55)] sm:p-10">
               <p className="text-sm font-semibold text-white">Review examples</p>
               <p className="mt-3 text-sm leading-relaxed text-slate-300">
-                Explore live guides and profiles to judge tone and usefulness for yourself. Continue any conversation through the channel that directed you here—this page simply documents how DropTraffic structures informational assets.
+                Explore live guides and profiles to judge tone and usefulness for yourself. Continue any conversation through the channel that directed you here—this page simply documents how DropshippTraffic structures informational assets.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link

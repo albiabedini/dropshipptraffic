@@ -39,16 +39,16 @@ const profileUseCases = [
 export const metadata: Metadata = {
   title: "Featured Website Profiles",
   description:
-    "Neutral DropTraffic summaries of useful websites, what each destination explains, and related informational guides for dropshipping discovery context.",
+    "Neutral DropshippTraffic summaries of useful websites, what each destination explains, and related informational guides for dropshipping discovery context.",
   alternates: {
     canonical: absoluteUrl("/websites"),
   },
   openGraph: {
     type: "website",
     siteName,
-    title: "Featured Website Profiles on DropTraffic",
+    title: "Featured Website Profiles on DropshippTraffic",
     description:
-      "Neutral DropTraffic summaries of useful websites, what each destination explains, and related informational guides for dropshipping discovery context.",
+      "Neutral DropshippTraffic summaries of useful websites, what each destination explains, and related informational guides for dropshipping discovery context.",
     url: absoluteUrl("/websites"),
   },
 };
@@ -94,7 +94,7 @@ export default function WebsitesPage() {
               <p className="mt-5 text-sm leading-relaxed text-slate-600 sm:text-[0.9375rem]">
                 Featured website profiles are short informational summaries. They help readers understand
                 what a destination is about before doing deeper online research. A profile may describe a
-                category, explain the type of material available, and point to related DropTraffic guides that
+                category, explain the type of material available, and point to related DropshippTraffic guides that
                 make the topic easier to evaluate.
               </p>
               <p className="mt-4 text-sm leading-relaxed text-slate-600 sm:text-[0.9375rem]">

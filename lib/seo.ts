@@ -1,15 +1,15 @@
-export const siteName = "DropTraffic";
+export const siteName = "DropshippTraffic";
 
 export const siteDescription =
-  "DropTraffic is an informational discovery site focused on dropshipping-related guides and neutral website profiles—reader education and contextual referral visibility without selling traffic or promising rankings.";
+  "DropshippTraffic is an informational discovery site focused on dropshipping-related guides and neutral website profiles—reader education and contextual referral visibility without selling traffic or promising rankings.";
 
 /** Default `<title>` and primary Open Graph title for the homepage / root layout. */
 export const siteTitleDefault = `${siteName} | Informational traffic and visibility for dropshipping websites`;
 
-/** Next.js metadata title template for interior pages (`Page Title | DropTraffic`). */
+/** Next.js metadata title template for interior pages (`Page Title | DropshippTraffic`). */
 export const metadataTitleTemplate = `%s | ${siteName}`;
 
-const fallbackSiteUrl = "https://dropp.example";
+const fallbackSiteUrl = "https://dropshipptrafic.com";
 
 export function getSiteUrl(): string {
   const rawUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();

@@ -12,12 +12,12 @@ import { websites } from "@/lib/websites";
 
 const discoveryNotes = [
   {
-    title: "What DropTraffic is",
-    body: "DropTraffic is an informational discovery site focused on dropshipping-related topics: beginner-friendly guides, website trust comparisons, and short reference profiles for useful destinations. The focus stays on learning and orientation—not ecommerce, SaaS, agency services, or selling traffic.",
+    title: "What DropshippTraffic is",
+    body: "DropshippTraffic is an informational discovery site focused on dropshipping-related topics: beginner-friendly guides, website trust comparisons, and short reference profiles for useful destinations. The focus stays on learning and orientation—not ecommerce, SaaS, agency services, or selling traffic.",
   },
   {
     title: "What readers can do here",
-    body: "Use DropTraffic when you want a plain-language checklist, a practical browsing habit, or a quick way to understand what a featured website is about before you continue your own research elsewhere.",
+    body: "Use DropshippTraffic when you want a plain-language checklist, a practical browsing habit, or a quick way to understand what a featured website is about before you continue your own research elsewhere.",
   },
   {
     title: "How profiles fit",
@@ -76,7 +76,7 @@ export default function HomePage() {
               Practical guides and website profiles—built for readers, not pitches.
             </h1>
             <p className="mt-7 max-w-xl text-base leading-relaxed text-slate-300 sm:text-lg">
-              DropTraffic publishes discovery guides and neutral website profiles for dropshipping-related informational visibility—reader education and referral context, not visitor packages or outcome guarantees.
+              DropshippTraffic publishes discovery guides and neutral website profiles for dropshipping-related informational visibility—reader education and referral context, not visitor packages or outcome guarantees.
               Read here for context and habits, then follow outbound links when you want primary details on each domain.
             </p>
             <div className="mt-11 flex flex-wrap gap-3">
@@ -123,9 +123,9 @@ export default function HomePage() {
       <section className="border-b border-slate-900/8 bg-[#faf8f5] py-14 sm:py-16 lg:py-20">
         <Container>
           <SectionHeader
-            eyebrow="About DropTraffic"
+            eyebrow="About DropshippTraffic"
             title="Discovery guides and neutral website profiles"
-            description="DropTraffic helps readers slow down, understand what they are looking at, and make sense of useful websites—informational traffic and visibility context without buyer-pressure language."
+            description="DropshippTraffic helps readers slow down, understand what they are looking at, and make sense of useful websites—informational traffic and visibility context without buyer-pressure language."
           />
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {discoveryNotes.map((item) => (
@@ -143,7 +143,7 @@ export default function HomePage() {
             <p className="mt-4 max-w-3xl text-sm leading-relaxed text-slate-300">
               Many people reach the web with simple questions: how to check if a website is safe,
               how to compare online information, how to avoid misleading websites, or how to keep
-              useful links organized. DropTraffic is designed for those discovery moments. Guides provide
+              useful links organized. DropshippTraffic is designed for those discovery moments. Guides provide
               practical steps, while profiles give readers a concise way to understand a destination
               before deciding whether it belongs in their own research.
             </p>
@@ -234,10 +234,10 @@ export default function HomePage() {
           <CtaBox
             variant="inset"
             eyebrow="Directed here?"
-            title="If someone pointed you to DropTraffic after outreach"
+            title="If someone pointed you to DropshippTraffic after outreach"
             description="This short section explains how informational pages work here—a neutral profile plus guides readers can use for context—not a pitch deck or funnel."
             href="/for-businesses"
-            buttonLabel="Read how DropTraffic lists destinations"
+            buttonLabel="Read how DropshippTraffic lists destinations"
           />
         </Container>
       </section>
