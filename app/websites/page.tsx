@@ -6,49 +6,49 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { websites } from "@/lib/websites";
 import { absoluteUrl, siteName } from "@/lib/seo";
 
-const profilePrinciples = [
+const placementPrinciples = [
   {
-    title: "Summaries, not endorsements",
-    body: "A profile explains what a website appears to provide and why it may be useful to understand. It does not replace your own checks, and it should not be read as a blanket endorsement.",
+    title: "Built to send visitors",
+    body: "Each placement creates a clear path from DropShippTraffic to the store owner's own website.",
   },
   {
-    title: "Context from guides",
-    body: "Profiles work best beside guides about website trust signals, online research, useful bookmarks, and safe website evaluation. The guide gives the method; the profile gives a concrete destination to inspect.",
+    title: "Focused on product visibility",
+    body: "The page makes the store, product category, and reason to click obvious before visitors land on the website.",
   },
   {
-    title: "Reader-first details",
-    body: "A useful profile should answer basic questions: what the website covers, who might find it relevant, what kind of information is summarized, and where to continue for primary details.",
+    title: "Clear traffic boundary",
+    body: "A placement can create traffic and product views. The store experience determines what visitors do after they land.",
   },
 ] as const;
 
-const profileChecklist = [
-  "What does this website explain or provide?",
-  "Is the category clear enough to understand quickly?",
-  "Which related guides help evaluate it?",
-  "What should I verify on the website itself?",
-  "Does the profile stay neutral and specific?",
+const placementChecklist = [
+  "Which store page should receive traffic?",
+  "What products or collections should visitors see first?",
+  "Is the store ready for referral visitors?",
+  "Do the claims stay realistic and supportable?",
+  "Does the call to action send people directly to the store?",
 ] as const;
 
-const profileUseCases = [
-  "Use a profile before reading deeper pages on an unfamiliar website.",
-  "Pair a profile with a guide when you want a website trust checklist.",
-  "Compare profiles by category, source clarity, and related guide context.",
-  "Keep your own notes about what still needs verification.",
+const placementUseCases = [
+  "Feature a dropshipping store so visitors can click through to the website.",
+  "Send referral visitors to a specific product, collection, or homepage.",
+  "Give products more views without promising sales outcomes.",
+  "Support traffic campaigns with clear store-facing pages.",
 ] as const;
 
 export const metadata: Metadata = {
-  title: "Featured Website Profiles",
+  title: "Store Placements for Dropshipping Traffic",
   description:
-    "Neutral DropshippTraffic summaries of useful websites, what each destination explains, and related informational guides for dropshipping discovery context.",
+    "DropShippTraffic store placements feature dropshipping websites with referral links that send visitors directly to product pages, collections, or store homepages.",
   alternates: {
     canonical: absoluteUrl("/websites"),
   },
   openGraph: {
     type: "website",
     siteName,
-    title: "Featured Website Profiles on DropshippTraffic",
+    title: "Store Placements for Dropshipping Traffic",
     description:
-      "Neutral DropshippTraffic summaries of useful websites, what each destination explains, and related informational guides for dropshipping discovery context.",
+      "Featured dropshipping store visibility pages with referral links that send visitors directly to store websites.",
     url: absoluteUrl("/websites"),
   },
 };
@@ -65,16 +65,16 @@ export default function WebsitesPage() {
           <SectionHeader
             inverse
             eyebrowTone="amber"
-            eyebrow="Discovery"
+            eyebrow="Traffic placements"
             headingLevel="h1"
-            title="Featured websites"
-            description="Short reference pages about worthwhile destinations—what they provide, who they suit, and companion guides when you want more reading."
+            title="Dropshipping store placements"
+            description="Store features, content mentions, and direct referral links built to send visitors to dropshipping websites."
             actions={
               <Link
-                href="/guides"
+                href="/for-businesses"
                 className="hidden text-sm font-semibold text-amber-100/95 hover:text-white sm:inline sm:pb-1"
               >
-                Read guides →
+                List my store →
               </Link>
             }
           />
@@ -86,28 +86,26 @@ export default function WebsitesPage() {
           <div className="grid gap-8 lg:grid-cols-[1fr_0.75fr]">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.14em] text-indigo-800">
-                How profiles work
+                How traffic placements work
               </p>
               <h2 className="mt-3 text-2xl font-semibold tracking-tight text-slate-900">
-                A curated reference area for useful websites
+                Get your store featured and send visitors to your website
               </h2>
               <p className="mt-5 text-sm leading-relaxed text-slate-600 sm:text-[0.9375rem]">
-                Featured website profiles are short informational summaries. They help readers understand
-                what a destination is about before doing deeper online research. A profile may describe a
-                category, explain the type of material available, and point to related DropshippTraffic guides that
-                make the topic easier to evaluate.
+                Store placements are built to send referral visitors. A placement introduces the
+                store, highlights the product category, and gives people a direct route to the
+                store owner&apos;s own website.
               </p>
               <p className="mt-4 text-sm leading-relaxed text-slate-600 sm:text-[0.9375rem]">
-                Use profiles as starting notes, not final judgments. If a profile seems relevant, read the
-                connected guides, check the destination directly, and apply the same trust questions you
-                would use anywhere else: identity, clarity, update signals, policies, and source quality.
-                A good profile should make verification easier by naming what to inspect next.
+                The goal is more traffic and more product views, not a promise that every visitor
+                will buy. Once visitors click through, the store&apos;s products, pricing, page quality,
+                trust signals, and checkout experience determine what happens next.
               </p>
             </div>
             <div className="rounded-xl border border-indigo-950/12 bg-indigo-50/70 p-6">
-              <h2 className="text-base font-semibold text-slate-900">Profile reading checklist</h2>
+              <h2 className="text-base font-semibold text-slate-900">Placement checklist</h2>
               <ul className="mt-5 space-y-3 text-sm leading-relaxed text-slate-600">
-                {profileChecklist.map((item) => (
+                {placementChecklist.map((item) => (
                   <li key={item} className="flex gap-3">
                     <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-700" />
                     <span>{item}</span>
@@ -117,7 +115,7 @@ export default function WebsitesPage() {
             </div>
           </div>
           <div className="mt-8 grid gap-5 md:grid-cols-3">
-            {profilePrinciples.map((item) => (
+            {placementPrinciples.map((item) => (
               <div key={item.title} className="rounded-xl border border-slate-900/10 bg-white/70 p-5">
                 <h2 className="text-sm font-semibold text-slate-900">{item.title}</h2>
                 <p className="mt-3 text-sm leading-relaxed text-slate-600">{item.body}</p>
@@ -125,21 +123,14 @@ export default function WebsitesPage() {
             ))}
           </div>
           <div className="mt-8 rounded-xl border border-slate-900/10 bg-[#152032] p-6 text-[#faf8f5]">
-            <h2 className="text-base font-semibold text-white">How to use profiles alongside guides</h2>
+            <h2 className="text-base font-semibold text-white">We drive traffic. Your store converts it.</h2>
             <p className="mt-4 text-sm leading-relaxed text-slate-300">
-              A website profile can help you orient quickly, but the guides explain how to evaluate what
-              you find. For example, a profile may introduce a learning resource, while a guide helps you
-              check update signals, source quality, privacy wording, or whether the site is useful enough
-              to bookmark. That combination keeps the profile area informational instead of promotional.
-            </p>
-            <p className="mt-4 text-sm leading-relaxed text-slate-300">
-              The profile page is also a place to practice safe website evaluation. Read the summary, scan
-              the related guides, then decide what still needs checking on the original domain. A strong
-              profile should make your next question clearer for future reference, not ask you to skip
-              your own judgment.
+              DropShippTraffic helps send more potential buyers to your store through placements,
+              content mentions, and referral links. Your product pages, offer, pricing, trust
+              signals, and checkout decide what happens after the click.
             </p>
             <ul className="mt-5 grid gap-3 text-sm leading-relaxed text-slate-300 sm:grid-cols-2">
-              {profileUseCases.map((item) => (
+              {placementUseCases.map((item) => (
                 <li key={item} className="flex gap-3">
                   <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-300" />
                   <span>{item}</span>

@@ -3,9 +3,9 @@ import { siteName } from "@/lib/seo";
 import { Container } from "./Container";
 
 const footerLinks = [
-  { href: "/guides", label: "Guides" },
-  { href: "/websites", label: "Websites" },
-  { href: "/for-businesses", label: "For Businesses" },
+  { href: "/for-businesses", label: "List My Store" },
+  { href: "/websites", label: "Store Placements" },
+  { href: "/guides", label: "Traffic Pages" },
 ];
 
 export function SiteFooter() {
@@ -24,12 +24,13 @@ export function SiteFooter() {
           <div className="max-w-md">
             <p className="text-base font-semibold tracking-tight text-white">{siteName}</p>
             <p className="mt-3 text-sm leading-relaxed text-slate-400">
-              Discovery guides and neutral website profiles for dropshipping visibility—skim here, follow outbound links when you want the full story elsewhere.
+              Store placements, content mentions, and direct referral links for dropshipping store
+              owners who want more visitors.
             </p>
           </div>
           <div>
             <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.16em] text-slate-500">
-              Explore
+              Traffic links
             </p>
             <ul className="mt-4 flex flex-col gap-2.5 text-sm">
               {footerLinks.map((l) => (
@@ -43,7 +44,7 @@ export function SiteFooter() {
           </div>
         </div>
         <p className="mt-12 border-t border-white/[0.07] pt-8 text-xs leading-relaxed text-slate-500">
-          © {new Date().getFullYear()} {siteName}. Informational content only.
+          (c) {new Date().getFullYear()} {siteName}. Traffic visibility service. No promised sales or revenue outcomes.
         </p>
       </Container>
     </footer>

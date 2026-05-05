@@ -1,6 +1,5 @@
 import Link from "next/link";
 import type { WebsiteProfile } from "@/lib/websites";
-import { siteName } from "@/lib/seo";
 import { CategoryPill } from "./CategoryPill";
 
 export function WebsiteCard({ site }: { site: WebsiteProfile }) {
@@ -31,7 +30,7 @@ export function WebsiteCard({ site }: { site: WebsiteProfile }) {
           href={`/websites/${site.slug}`}
           className="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-indigo-950 hover:text-indigo-950/90"
         >
-          Read profile on {siteName}
+          View store feature
           <span aria-hidden className="transition-transform group-hover:translate-x-0.5">
             →
           </span>

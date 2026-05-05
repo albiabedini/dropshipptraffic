@@ -15,7 +15,7 @@ export function CtaBox({
   eyebrow?: string;
   variant?: "standalone" | "inset";
 }) {
-  const eyebrowText = eyebrow ?? "Note";
+  const eyebrowText = eyebrow ?? "Traffic offer";
   if (variant === "inset") {
     return (
       <div className="relative overflow-hidden rounded-2xl border border-white/12 bg-[#faf8f5]/[0.97] p-8 shadow-[0_28px_70px_-48px_rgba(0,0,0,0.85)] ring-1 ring-amber-400/15 sm:p-10 lg:p-11">

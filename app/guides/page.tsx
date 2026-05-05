@@ -8,66 +8,66 @@ import { absoluteUrl, siteName } from "@/lib/seo";
 
 const guideHubNotes = [
   {
-    title: "Use guides as checklists",
-    body: "Each guide is written so a beginner can turn the advice into a short checklist: what to check first, what red flags to notice, and what questions to ask before relying on a page.",
+    title: "Traffic first",
+    body: "These pages support the service offer: more referral visitors, more product-page views, and more traffic sent to dropshipping stores.",
   },
   {
-    title: "Read for browsing habits",
-    body: "The library focuses on repeatable online browsing tips, not one-off opinions. You can reuse the same habits when comparing websites, reading product information, saving bookmarks, or checking source quality.",
+    title: "Store owner focus",
+    body: "The copy is written for people who own or manage stores, not for readers looking for a general dropshipping course.",
   },
   {
-    title: "Treat examples as optional",
-    body: "Some guides mention a related website profile when a concrete example helps. Those links are context for learning, not a requirement to take action on another site.",
+    title: "Clear conversion boundary",
+    body: "The pages separate traffic from sales so expectations stay strong, direct, and realistic.",
   },
 ] as const;
 
 const guideTopics = [
-  "Beginner website safety checklist",
-  "Website trust signals and red flags",
-  "How to evaluate information online",
-  "How to find useful websites",
-  "Online browsing mistakes to avoid",
-  "How to compare websites before trusting them",
+  "Referral traffic for dropshipping stores",
+  "Store visibility pages",
+  "Product-page traffic",
+  "Content placements",
+  "Traffic versus conversion",
+  "Preparing your store for visitors",
 ] as const;
 
 const readingSteps = [
-  "Start with the page that matches your immediate question.",
-  "Turn the headings into a quick checklist before you browse elsewhere.",
-  "Notice the red flags and examples, then compare them with a real page.",
-  "Use related guides when the question shifts from safety to research or organization.",
+  "Start with the traffic problem your store has right now.",
+  "Choose the page that matches the traffic asset you want to use.",
+  "Use the checklist to prepare your store before visitors arrive.",
+  "Remember that traffic creates chances; your store experience handles conversion.",
 ] as const;
 
 const startHerePaths = [
   {
-    need: "I want to check a website more safely",
-    href: "/guides/how-to-compare-online-stores",
-    label: "Start with website comparison",
+    need: "I want more referral visitors",
+    href: "/guides/referral-traffic-for-dropshipping-stores",
+    label: "Start with referral traffic",
   },
   {
-    need: "I keep making quick browsing mistakes",
-    href: "/guides/online-shopping-mistakes-to-avoid",
-    label: "Review common mistakes",
+    need: "I want products seen more often",
+    href: "/guides/product-page-visibility-for-dropshipping",
+    label: "Improve product visibility",
   },
   {
-    need: "I want better sources to save",
-    href: "/guides/beginner-guide-finding-useful-websites",
-    label: "Build a discovery routine",
+    need: "I want realistic expectations",
+    href: "/guides/traffic-vs-sales-for-dropshipping-stores",
+    label: "Understand traffic vs. sales",
   },
 ] as const;
 
 export const metadata: Metadata = {
-  title: "Guides for Online Research and Discovery",
+  title: "Traffic Pages for Dropshipping Store Owners",
   description:
-    "Beginner-friendly DropshippTraffic guides about online research, website comparison, browsing mistakes, trust signals, useful links, and safer discovery habits—with dropshipping visibility context.",
+    "Traffic-focused DropShippTraffic pages for store owners who want more referral visitors, more product views, and realistic expectations about sales outcomes.",
   alternates: {
     canonical: absoluteUrl("/guides"),
   },
   openGraph: {
     type: "website",
     siteName,
-    title: "DropshippTraffic Guides for Online Research and Discovery",
+    title: "Traffic Pages for Dropshipping Store Owners",
     description:
-      "Beginner-friendly DropshippTraffic guides about online research, website comparison, browsing mistakes, trust signals, useful links, and safer discovery habits—with dropshipping visibility context.",
+      "Traffic-focused DropShippTraffic pages for store owners who want more referral visitors and more product views without promised-purchase claims.",
     url: absoluteUrl("/guides"),
   },
 };
@@ -84,16 +84,16 @@ export default function GuidesPage() {
           <SectionHeader
             inverse
             eyebrowTone="amber"
-            eyebrow="Library"
+            eyebrow="Traffic setup"
             headingLevel="h1"
-            title="Guides"
-            description="Straightforward explainers—many link to neutral website profiles when a real destination helps illustrate the advice."
+            title="Dropshipping traffic pages"
+            description="Practical pages for store owners who want more visitors, more product views, and a store ready to receive referral traffic."
             actions={
               <Link
-                href="/websites"
+                href="/for-businesses"
                 className="hidden text-sm font-semibold text-amber-100/95 hover:text-white sm:inline sm:pb-1"
               >
-                Browse profiles →
+                Get Traffic for My Store →
               </Link>
             }
           />
@@ -105,22 +105,20 @@ export default function GuidesPage() {
           <div className="grid gap-8 lg:grid-cols-[1fr_0.85fr] lg:items-start">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.14em] text-teal-800">
-                How to use this library
+                Built for store owners
               </p>
               <h2 className="mt-3 text-2xl font-semibold tracking-tight text-slate-900">
-                Guides for safer, clearer online research
+                See how traffic assets send visitors to your store
               </h2>
               <p className="mt-5 text-sm leading-relaxed text-slate-600 sm:text-[0.9375rem]">
-                DropshippTraffic guides are written for people who want practical help understanding websites,
-                not dense technical manuals. The topics cover how to check if a website is safe, how
-                to know if a website is trustworthy, how to avoid misleading pages, and how to keep
-                useful online research organized.
+                These pages show the traffic side of DropShippTraffic: visibility pages,
+                referral links, store placements, and content mentions that point visitors back to
+                dropshipping websites.
               </p>
               <p className="mt-4 text-sm leading-relaxed text-slate-600 sm:text-[0.9375rem]">
-                Start with the guide closest to your question, then use the related reading links to
-                move sideways. A guide about online browsing mistakes may lead naturally into a website
-                trust checklist; a guide about useful websites may lead into bookmark habits or source
-                evaluation.
+                They are not a generic dropshipping blog and they do not promise sales. Use them to
+                prepare your store for traffic, choose target pages, and understand how product views
+                create more chances for your own site to convert.
               </p>
             </div>
             <div className="rounded-xl border border-teal-900/12 bg-teal-50/60 p-6">
@@ -144,12 +142,11 @@ export default function GuidesPage() {
             ))}
           </div>
           <div className="mt-8 rounded-xl border border-slate-900/10 bg-[#152032] p-6 text-[#faf8f5]">
-            <h2 className="text-base font-semibold text-white">A simple way to read DropshippTraffic guides</h2>
+            <h2 className="text-base font-semibold text-white">A simple way to use these traffic pages</h2>
             <p className="mt-4 text-sm leading-relaxed text-slate-300">
-              These guides are most useful when you read them with a real question in mind. If you are
-              checking whether a website is safe, focus on trust signals, contact details, policy clarity,
-              and misleading website red flags. If you are trying to find useful websites, focus on search
-              phrases, source quality, bookmarks, and how to evaluate information online.
+              More traffic helps more people reach your store. Before that happens, your product pages
+              should be clear, your policies should be easy to find, and your offer should be ready for
+              visitors who are deciding whether to keep browsing.
             </p>
             <ul className="mt-5 grid gap-3 text-sm leading-relaxed text-slate-300 sm:grid-cols-2">
               {readingSteps.map((step) => (
@@ -161,7 +158,7 @@ export default function GuidesPage() {
             </ul>
           </div>
           <div className="mt-8 rounded-xl border border-slate-900/10 bg-white/75 p-6">
-            <h2 className="text-base font-semibold text-slate-900">Start here by reader need</h2>
+            <h2 className="text-base font-semibold text-slate-900">Start here by store need</h2>
             <div className="mt-5 grid gap-4 md:grid-cols-3">
               {startHerePaths.map((item) => (
                 <div key={item.href} className="rounded-lg border border-slate-900/10 bg-[#faf8f5] p-5">

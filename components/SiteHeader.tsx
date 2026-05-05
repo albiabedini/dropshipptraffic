@@ -8,9 +8,9 @@ import { Container } from "./Container";
 
 const nav = [
   { href: "/", label: "Home" },
-  { href: "/guides", label: "Guides" },
-  { href: "/websites", label: "Websites" },
-  { href: "/for-businesses", label: "For Businesses" },
+  { href: "/websites", label: "Store Placements" },
+  { href: "/guides", label: "Traffic Pages" },
+  { href: "/for-businesses", label: "List My Store" },
 ] as const;
 
 function isActive(pathname: string, href: string) {

@@ -30,7 +30,7 @@ export function GuideCard({ guide }: { guide: Guide }) {
           href={`/guides/${guide.slug}`}
           className="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-teal-900 hover:text-teal-950"
         >
-          Read guide
+          See traffic page
           <span aria-hidden className="transition-transform group-hover:translate-x-0.5">
             →
           </span>

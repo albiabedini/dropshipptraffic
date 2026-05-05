@@ -10,31 +10,39 @@ import { getGuideCategories, getLatestGuides } from "@/lib/guides";
 import { absoluteUrl, siteDescription, siteName, siteTitleDefault } from "@/lib/seo";
 import { websites } from "@/lib/websites";
 
-const discoveryNotes = [
+const serviceNotes = [
   {
-    title: "What DropshippTraffic is",
-    body: "DropshippTraffic is an informational discovery site focused on dropshipping-related topics: beginner-friendly guides, website trust comparisons, and short reference profiles for useful destinations. The focus stays on learning and orientation—not ecommerce, SaaS, agency services, or selling traffic.",
+    title: "Traffic for dropshipping stores",
+    body: "You want more traffic. We create store placements, content mentions, and referral links that send visitors to your dropshipping website.",
   },
   {
-    title: "What readers can do here",
-    body: "Use DropshippTraffic when you want a plain-language checklist, a practical browsing habit, or a quick way to understand what a featured website is about before you continue your own research elsewhere.",
+    title: "Built around product visibility",
+    body: "Your products need people looking at them. More referral visitors create more product views and more chances for your store to turn interest into orders.",
   },
   {
-    title: "How profiles fit",
-    body: "Website profiles are neutral summaries. They explain what a site appears to provide, what kind of reader may find it relevant, and which guides give helpful context. They are examples and reference points, not endorsements.",
+    title: "Realistic outcome boundaries",
+    body: "We drive traffic. Your store converts it. Sales depend on your products, pricing, offer, website quality, trust signals, and checkout experience.",
   },
 ] as const;
 
-const guideThemes = [
-  "How to evaluate product information pages",
-  "How to compare websites before trusting them",
-  "Online browsing mistakes beginners should avoid",
-  "How to find useful websites and organize bookmarks",
-  "Website safety, trust signals, and red flags",
+const whatYouGet = [
+  "More referral visitors to your dropshipping store",
+  "A dedicated store feature or visibility page",
+  "Links that send people directly to your website",
+  "More product views across the products you want seen",
+  "More chances to turn visitors into customers",
+] as const;
+
+const trafficMethods = [
+  "Store visibility pages",
+  "Content placements",
+  "Dedicated store features",
+  "Contextual referral links",
+  "Traffic-focused store mentions",
 ] as const;
 
 export const metadata: Metadata = {
-  title: "Informational Guides and Website Discovery",
+  title: "Get More Traffic to Your Dropshipping Store",
   description: siteDescription,
   alternates: {
     canonical: absoluteUrl("/"),
@@ -70,27 +78,28 @@ export default function HomePage() {
         <Container className="relative py-16 sm:py-20 lg:grid lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:gap-14 lg:py-28">
           <div className="max-w-xl lg:max-w-none">
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-amber-200/95">
-              Dropshipping discovery · informational only
+              Traffic and visibility for dropshipping stores
             </p>
             <h1 className="mt-5 text-[2rem] font-semibold leading-[1.12] tracking-tight text-white sm:text-[2.65rem] sm:leading-[1.08] lg:text-5xl">
-              Practical guides and website profiles—built for readers, not pitches.
+              Get More Traffic to Your Dropshipping Store
             </h1>
             <p className="mt-7 max-w-xl text-base leading-relaxed text-slate-300 sm:text-lg">
-              DropshippTraffic publishes discovery guides and neutral website profiles for dropshipping-related informational visibility—reader education and referral context, not visitor packages or outcome guarantees.
-              Read here for context and habits, then follow outbound links when you want primary details on each domain.
+              DropShippTraffic helps dropshipping store owners get more visitors through visibility
+              pages, store placements, and referral links that send people directly to their websites.
+              More visitors means more product views and more chances to make sales.
             </p>
             <div className="mt-11 flex flex-wrap gap-3">
               <Link
-                href="/guides"
+                href="/for-businesses"
                 className="inline-flex items-center justify-center rounded-xl bg-teal-400 px-6 py-3.5 text-sm font-semibold text-teal-950 shadow-[0_16px_38px_-22px_rgba(45,212,191,0.65)] transition-colors hover:bg-teal-300"
               >
-                Browse guides
+                Get Traffic for My Store
               </Link>
               <Link
-                href="/websites"
+                href="#how-it-works"
                 className="inline-flex items-center justify-center rounded-xl border border-white/18 bg-white/[0.07] px-6 py-3.5 text-sm font-semibold text-[#faf8f5] backdrop-blur-sm transition-colors hover:bg-white/[0.12]"
               >
-                Featured websites
+                See How Traffic Works
               </Link>
             </div>
           </div>
@@ -98,37 +107,37 @@ export default function HomePage() {
           <div className="relative mt-14 hidden lg:mt-0 lg:flex lg:flex-col lg:gap-4">
             <div className="rounded-2xl border border-white/12 bg-white/[0.06] p-6 shadow-[0_22px_56px_-36px_rgba(0,0,0,0.65)] backdrop-blur-md">
               <p className="text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-teal-200/90">
-                Guides
+                We drive traffic
               </p>
               <p className="mt-3 text-sm leading-relaxed text-slate-200">
-                Habits for comparing listings, spotting thin policies, and choosing destinations you will
-                reopen—not impulse clicks.
+                Visibility pages, content placements, store features, and referral links create more
+                paths for visitors to reach your dropshipping website.
               </p>
               <div className="mt-5 h-px w-full bg-gradient-to-r from-teal-400/40 to-transparent" />
-              <p className="mt-4 text-xs text-slate-400">Editorial guides · reader-first</p>
+              <p className="mt-4 text-xs text-slate-400">Referral visitors - product visibility</p>
             </div>
             <div className="-translate-x-6 rounded-2xl border border-amber-400/15 bg-[#faf8f5]/[0.96] p-6 text-slate-900 shadow-[0_24px_56px_-38px_rgba(251,191,36,0.35)] ring-1 ring-white/40">
               <p className="text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-indigo-700">
-                Profiles
+                Your store converts it
               </p>
               <p className="mt-3 text-sm leading-relaxed text-slate-600">
-                Neutral summaries of what a site offers and who it is for—discovery notes you can skim,
-                then verify on their domain.
+                Sales depend on your offer, product-market fit, pricing, trust signals, page speed,
+                checkout flow, and follow-up.
               </p>
             </div>
           </div>
         </Container>
       </section>
 
-      <section className="border-b border-slate-900/8 bg-[#faf8f5] py-14 sm:py-16 lg:py-20">
+      <section id="how-it-works" className="border-b border-slate-900/8 bg-[#faf8f5] py-14 sm:py-16 lg:py-20">
         <Container>
           <SectionHeader
-            eyebrow="About DropshippTraffic"
-            title="Discovery guides and neutral website profiles"
-            description="DropshippTraffic helps readers slow down, understand what they are looking at, and make sense of useful websites—informational traffic and visibility context without buyer-pressure language."
+            eyebrow="How it works"
+            title="We drive traffic. Your store converts it."
+            description="We help bring more visitors to your dropshipping website. Sales depend on your products, pricing, offer, website quality, trust signals, and checkout experience."
           />
           <div className="mt-10 grid gap-5 md:grid-cols-3">
-            {discoveryNotes.map((item) => (
+            {serviceNotes.map((item) => (
               <div
                 key={item.title}
                 className="rounded-xl border border-slate-900/10 bg-gradient-to-br from-[#f5f2ec] via-[#faf8f5] to-teal-50/50 p-6 shadow-[0_14px_36px_-30px_rgba(15,118,110,0.2)] ring-1 ring-white/80"
@@ -138,38 +147,31 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-          <div className="mt-10 rounded-2xl border border-slate-900/10 bg-[#152032] p-7 text-[#faf8f5] shadow-[0_22px_56px_-42px_rgba(21,32,50,0.55)] sm:p-8">
-            <h2 className="text-lg font-semibold text-white">Why the focus stays informational</h2>
-            <p className="mt-4 max-w-3xl text-sm leading-relaxed text-slate-300">
-              Many people reach the web with simple questions: how to check if a website is safe,
-              how to compare online information, how to avoid misleading websites, or how to keep
-              useful links organized. DropshippTraffic is designed for those discovery moments. Guides provide
-              practical steps, while profiles give readers a concise way to understand a destination
-              before deciding whether it belongs in their own research.
-            </p>
-          </div>
         </Container>
       </section>
 
       <section className="border-b border-slate-900/8 bg-gradient-to-b from-[#f0ebe3] via-[#ebe6df] to-[#e6e0d8] py-14 sm:py-16 lg:py-20">
         <Container>
           <SectionHeader
-            eyebrow="Topics"
+            eyebrow="What you get"
             eyebrowTone="amber"
-            title="Guide categories"
-            description="Themes we publish today—product research, discovery habits, online safety, and roundups—structured so you can jump to what you need."
+            title="A store feature, referral links, and more product views"
+            description="DropShippTraffic gives store owners concrete traffic assets: a feature or placement, direct links to the website, content mentions, and more chances for visitors to see products."
           />
-          <div className="mt-10 flex flex-wrap gap-2 sm:gap-2.5">
-            {categories.map((c) => (
-              <CategoryPill key={c} variant="warm" label={c} />
-            ))}
-          </div>
-          <div className="mt-9 grid gap-4 text-sm leading-relaxed text-slate-600 sm:grid-cols-2">
-            {guideThemes.map((theme) => (
-              <div key={theme} className="rounded-xl border border-slate-900/10 bg-[#faf8f5]/80 p-5">
-                {theme}
+          <div className="mt-9 grid gap-4 text-sm leading-relaxed text-slate-600 sm:grid-cols-2 lg:grid-cols-5">
+            {whatYouGet.map((item) => (
+              <div key={item} className="rounded-xl border border-slate-900/10 bg-[#faf8f5]/80 p-5">
+                {item}
               </div>
             ))}
+          </div>
+          <div className="mt-10 rounded-2xl border border-slate-900/10 bg-[#152032] p-7 text-[#faf8f5] shadow-[0_22px_56px_-42px_rgba(21,32,50,0.55)] sm:p-8">
+            <h2 className="text-lg font-semibold text-white">Traffic that gives your products more chances to convert</h2>
+            <p className="mt-4 max-w-3xl text-sm leading-relaxed text-slate-300">
+              We do not sell fake bot traffic, and we do not promise purchases or revenue. The service is
+              focused on visibility, referral visitors, and direct paths to your store so real people
+              have more chances to view your products.
+            </p>
           </div>
         </Container>
       </section>
@@ -181,21 +183,18 @@ export default function HomePage() {
         />
         <Container className="relative">
           <SectionHeader
-            eyebrow="Reading list"
-            title="Latest guides"
-            description="Explainers on researching products, comparing websites, finding dependable sources, and keeping bookmarks useful."
-            actions={
-              <Link
-                href="/guides"
-                className="text-sm font-semibold text-teal-900 hover:text-teal-950 sm:pb-0.5"
-              >
-                View all guides →
-              </Link>
-            }
+            eyebrow="Traffic methods"
+            title="How we send visitors to your store"
+            description="Your store can be featured through pages and placements that link to the products, collections, or homepage you want visitors to see."
           />
-          <div className="mt-11 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-            {latestGuides.map((g) => (
-              <GuideCard key={g.slug} guide={g} />
+          <div className="mt-10 flex flex-wrap gap-2 sm:gap-2.5">
+            {trafficMethods.map((method) => (
+              <CategoryPill key={method} variant="warm" label={method} />
+            ))}
+          </div>
+          <div className="mt-10 grid gap-7 md:grid-cols-2 md:gap-8">
+            {websites.map((w) => (
+              <WebsiteCard key={w.slug} site={w} />
             ))}
           </div>
         </Container>
@@ -204,22 +203,27 @@ export default function HomePage() {
       <section className="border-b border-indigo-950/10 bg-gradient-to-br from-[#e8e6ff] via-[#f5f2ec] to-[#fdeecf]/70 py-14 sm:py-16 lg:py-20">
         <Container>
           <SectionHeader
-            eyebrow="Spotlights"
+            eyebrow="Traffic pages"
             eyebrowTone="indigo"
-            title="Featured websites"
-            description="Pages that spell out what each destination provides and link out when you want depth—reference-style, not promotional copy."
+            title="Make your store ready for the traffic"
+            description="Short, practical pages on referral traffic, store placements, product-page views, and why traffic creates chances while your store handles conversion."
             actions={
               <Link
-                href="/websites"
+                href="/guides"
                 className="text-sm font-semibold text-indigo-950 hover:text-indigo-950/85 sm:pb-0.5"
               >
-                All profiles →
+                See How Traffic Works →
               </Link>
             }
           />
-          <div className="mt-11 grid gap-7 md:grid-cols-2 md:gap-8">
-            {websites.map((w) => (
-              <WebsiteCard key={w.slug} site={w} />
+          <div className="mt-8 flex flex-wrap gap-2 sm:gap-2.5">
+            {categories.map((c) => (
+              <CategoryPill key={c} variant="indigo" label={c} />
+            ))}
+          </div>
+          <div className="mt-11 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+            {latestGuides.map((g) => (
+              <GuideCard key={g.slug} guide={g} />
             ))}
           </div>
         </Container>
@@ -233,11 +237,11 @@ export default function HomePage() {
         <Container className="relative">
           <CtaBox
             variant="inset"
-            eyebrow="Directed here?"
-            title="If someone pointed you to DropshippTraffic after outreach"
-            description="This short section explains how informational pages work here—a neutral profile plus guides readers can use for context—not a pitch deck or funnel."
+            eyebrow="Ready for more visitors?"
+            title="Get your store featured and start receiving referral visitors"
+            description="Tell us where you want traffic sent. We shape the store feature, content mentions, and referral links around the pages you want visitors to open."
             href="/for-businesses"
-            buttonLabel="Read how DropshippTraffic lists destinations"
+            buttonLabel="Get My Store Featured"
           />
         </Container>
       </section>

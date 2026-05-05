@@ -1,10 +1,10 @@
-export const siteName = "DropshippTraffic";
+export const siteName = "DropShippTraffic";
 
 export const siteDescription =
-  "DropshippTraffic is an informational discovery site focused on dropshipping-related guides and neutral website profiles—reader education and contextual referral visibility without selling traffic or promising rankings.";
+  "DropShippTraffic helps dropshipping store owners get more referral traffic through store placements, visibility pages, content mentions, and direct links.";
 
 /** Default `<title>` and primary Open Graph title for the homepage / root layout. */
-export const siteTitleDefault = `${siteName} | Informational traffic and visibility for dropshipping websites`;
+export const siteTitleDefault = `${siteName} | Get More Traffic to Your Dropshipping Store`;
 
 /** Next.js metadata title template for interior pages (`Page Title | DropshippTraffic`). */
 export const metadataTitleTemplate = `%s | ${siteName}`;

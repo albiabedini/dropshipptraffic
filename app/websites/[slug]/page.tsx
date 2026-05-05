@@ -54,7 +54,7 @@ export default async function WebsiteProfilePage({ params }: Props) {
             <CategoryPill variant="onDark" label={site.category} />
             <span className="hidden h-1 w-1 rounded-full bg-white/35 sm:inline" aria-hidden />
             <span className="hidden text-xs font-medium uppercase tracking-[0.12em] text-indigo-200/85 sm:inline">
-              Summary profile
+              Store placement
             </span>
           </div>
           <h1 className="mt-6 max-w-3xl text-[2rem] font-semibold leading-[1.14] tracking-tight text-white sm:text-[2.35rem] sm:leading-[1.1] lg:text-4xl">
@@ -80,7 +80,7 @@ export default async function WebsiteProfilePage({ params }: Props) {
                     className="h-1 w-11 rounded-full bg-gradient-to-r from-indigo-500 via-violet-600 to-amber-500/85"
                     aria-hidden
                   />
-                  Editorial note
+                  Store visibility note
                 </h2>
                 <p className="mt-6 max-w-prose text-[1.0625rem] leading-[1.78] text-slate-600">{site.featuredText}</p>
               </section>
@@ -106,7 +106,7 @@ export default async function WebsiteProfilePage({ params }: Props) {
 
               <section className="rounded-2xl border border-slate-900/10 bg-gradient-to-br from-[#f5f2ec] via-[#faf8f5] to-indigo-50/60 p-8 shadow-[0_18px_48px_-38px_rgba(67,56,202,0.25)] ring-1 ring-white/80 sm:p-10">
                 <h2 className="text-xl font-semibold tracking-tight text-slate-900">
-                  Questions to ask while evaluating this profile
+                  Questions to ask before sending traffic
                 </h2>
                 <ul className="mt-6 space-y-4 text-sm leading-relaxed text-slate-600">
                   {site.verificationQuestions.map((question) => (
@@ -121,18 +121,18 @@ export default async function WebsiteProfilePage({ params }: Props) {
               <section className="overflow-hidden rounded-2xl border border-slate-900/10 bg-[#152032] p-8 text-[#faf8f5] shadow-[0_22px_56px_-38px_rgba(21,32,50,0.55)] sm:p-10">
                 <div className="flex flex-wrap items-baseline justify-between gap-4">
                   <div>
-                    <h2 className="text-lg font-semibold text-white">Related guides</h2>
+                    <h2 className="text-lg font-semibold text-white">Related traffic pages</h2>
                     <p className="mt-2 max-w-prose text-sm leading-relaxed text-slate-400">
-                      {siteName} guides that touch the same themes as this destination—optional reading before you continue on their domain.
+                      {siteName} pages that help store owners understand referral traffic, product views, and conversion expectations.
                     </p>
                   </div>
                   <Link href="/guides" className="text-xs font-semibold uppercase tracking-[0.12em] text-indigo-200/90 hover:text-indigo-100">
-                    Guides hub →
+                    Traffic pages →
                   </Link>
                 </div>
                 {relatedGuides.length === 0 ? (
                   <p className="mt-5 border-t border-white/[0.09] pt-5 text-sm text-slate-400">
-                    No linked guides yet.
+                    No linked traffic pages yet.
                   </p>
                 ) : (
                   <ul className="mt-5 flex flex-col gap-4 border-t border-white/[0.09] pt-6">
@@ -153,7 +153,7 @@ export default async function WebsiteProfilePage({ params }: Props) {
                   href="/websites"
                   className="mt-8 inline-flex text-sm font-semibold text-slate-300 hover:text-white"
                 >
-                  ← All featured websites
+                  ← All store placements
                 </Link>
               </section>
             </div>
@@ -165,10 +165,10 @@ export default async function WebsiteProfilePage({ params }: Props) {
                   aria-hidden
                 />
                 <p className="relative text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-indigo-900">
-                  Continue on their site
+                  Send visitors to the store
                 </p>
                 <p className="relative mt-4 text-sm leading-relaxed text-slate-600">
-                  Use {site.name}&apos;s website for the full source material, policies, updates, or account-specific details—this {siteName} page stays summary-only.
+                  Use the store website for current products, prices, policies, and checkout. This {siteName} placement points visitors there.
                 </p>
                 <a
                   href={site.websiteUrl}
@@ -176,10 +176,10 @@ export default async function WebsiteProfilePage({ params }: Props) {
                   rel="noopener noreferrer"
                   className="relative mt-7 inline-flex w-full items-center justify-center rounded-xl bg-[#24316b] px-6 py-3.5 text-center text-sm font-semibold text-[#faf8f5] shadow-[0_16px_40px_-24px_rgba(36,49,107,0.75)] transition-colors hover:bg-[#2d3d7a]"
                 >
-                  Visit {site.name} (official site)
+                  Open {site.name}
                 </a>
                 <p className="relative mt-4 border-t border-slate-900/10 pt-4 text-xs leading-relaxed text-slate-500">
-                  Opens in a new tab. {siteName} is an informational reference and does not handle activity on external websites.
+                  Opens in a new tab. {siteName} sends referral visitors; the store handles products, checkout, support, and sales outcomes.
                 </p>
               </div>
             </aside>
